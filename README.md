@@ -16,7 +16,6 @@ flutter sdk-path
 
 ```
 flutter doctor
-
 ```
 
 #### Yolumuzu güncelleyelim
