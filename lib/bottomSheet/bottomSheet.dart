@@ -18,7 +18,7 @@ void displayBottomSheet(
         return Consumer<InitProviders>(
           builder: (context, initProvidersDoneObject, child) {
             return FutureBuilder(
-                future: initProvidersDoneObject.getCountDB(),
+                future: initProvidersDoneObject.getReturnCountDB(),
                 builder: (context, snapshot) {
                   return WillPopScope(
                     child: Container(

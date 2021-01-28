@@ -69,7 +69,6 @@ class InitProviders extends ChangeNotifier {
             cells: <DataCell>[
               DataCell(
                 Container(
-                  width: 75,
                   child: Text(
                     items[i].title,
                     overflow: TextOverflow.ellipsis,
@@ -78,7 +77,6 @@ class InitProviders extends ChangeNotifier {
               ),
               DataCell(
                 Container(
-                  width: 75,
                   child: Text(
                     items[i].description,
                     overflow: TextOverflow.ellipsis,
