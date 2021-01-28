@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../database/cruds.dart';
 import '../model/todo.dart';
 import '../bottomSheet/bottomSheet.dart';
@@ -92,11 +93,16 @@ class InitProviders extends ChangeNotifier {
                       showData(items[i], context),
                     },
                   ),
-                  IconButton(
-                    iconSize: 20.0,
-                    icon: Icon(Icons.edit_rounded),
-                    onPressed: () => {
-                      getData(items[i].id, context),
+                  Consumer<InitProviders>(
+                    builder: (context, initProvidersDataTableObject, child) {
+                      return IconButton(
+                        iconSize: 20.0,
+                        icon: Icon(Icons.edit_rounded),
+                        onPressed: () => {
+                          getData(items[i].id, context),
+                          initProvidersDataTableObject.visibleReturn(false)
+                        },
+                      );
                     },
                   )
                 ]),
