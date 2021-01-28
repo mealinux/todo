@@ -1,16 +1,56 @@
-# todo_app
+### Basit bir TODO (Yapılacak Listesi) uygulaması
 
-A new Flutter project.
+### Yükleme adımları
 
-## Getting Started
+1.
+```
+sudo snap install flutter --classic
+```
 
-This project is a starting point for a Flutter application.
+2.
+```
+flutter sdk-path
+```
 
-A few resources to get you started if this is your first Flutter project:
+3.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+flutter doctor
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Yolumuzu güncelleyelim
+4.
+```
+export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+```
+
+5.
+```
+source ~/.bashrc
+```
+
+6.
+```
+echo $PATH
+```
+
+7.
+```
+which flutter
+```
+
+8.
+Android Studio indirin ve android 4.1 veya üstü bir emülatör oluşturun veya cihazınızı kabloyla bilgisyarınıza bağlayın
+
+9.
+```
+cd ./todo
+```
+
+10.
+```
+flutter run
+```
+
+daha fazla ayrıntı için -> https://flutter.dev/docs/get-started/install/linux
+
